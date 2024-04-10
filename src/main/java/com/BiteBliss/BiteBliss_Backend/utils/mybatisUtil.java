@@ -8,7 +8,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
-public class mybatisUtil {
+public class MybatisUtil {
   private static SqlSessionFactory sqlSessionFactory;
   //静态初始化块
   static {
@@ -21,6 +21,6 @@ public class mybatisUtil {
   }
 
   public static SqlSession getSqlSession() {
-    return sqlSessionFactory.openSession();
+    return sqlSessionFactory.openSession(true);
   }
 }

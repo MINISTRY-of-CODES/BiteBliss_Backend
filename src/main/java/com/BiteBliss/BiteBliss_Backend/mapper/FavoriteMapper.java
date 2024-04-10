@@ -19,4 +19,6 @@ public interface FavoriteMapper {
   List<Favorite> getAllFavorite();
 
   Favorite getFavoriteByUid(@Param("uid") int uid);
+
+  int insertFavorite(Favorite favorite);
 }
