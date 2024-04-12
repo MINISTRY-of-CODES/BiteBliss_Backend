@@ -5,17 +5,22 @@
 <mapper namespace="com.BiteBliss.BiteBliss_Backend.mapper.FavoriteMapper">
 
   <!-- getAllFavorite -->
-  <select id="getAllFavorite" resultType="com.BiteBliss.BiteBliss_Backend.POJO.Favorite">
+  <select id="getAllFavorite" resultType="Favorite">
     select * from favorite_stall
   </select>
 
   <!-- getFavoriteByUid --> 
-  <select id="getFavoriteByUid" resultType="com.BiteBliss.BiteBliss_Backend.POJO.Favorite">
-    select * from favorite_stall where user_id = #{uid}
+  <select id="getFavoriteByUid" resultType="Favorite">
+    select * from favorite_stall where user_id = #{userId}
   </select>
 
   <!-- insertFavorite --> 
   <insert id="insertFavorite">
     insert into favorite_stall values(null, #{userId}, #{favoriteStall}, #{updateTime}, #{isDelete})
   </insert>
+
+  <!-- updateFavoriteByUid --> 
+  <update id="updateFavoriteByUid">
+    update favorite_stall set favorite_stall = #{favoriteStall}, update_time = #{updateTime} where user_id = #{userId}
+  </update>  
 </mapper>

@@ -4,12 +4,11 @@ import java.io.IOException;
 import java.io.InputStream;
 
 import org.apache.ibatis.io.Resources;
-import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 public class MybatisUtil {
-  private static SqlSessionFactory sqlSessionFactory;
+  public static SqlSessionFactory sqlSessionFactory;
   //静态初始化块
   static {
     try {
@@ -18,9 +17,5 @@ public class MybatisUtil {
     } catch (IOException e) {
       e.printStackTrace();
     }
-  }
-
-  public static SqlSession getSqlSession() {
-    return sqlSessionFactory.openSession(true);
   }
 }

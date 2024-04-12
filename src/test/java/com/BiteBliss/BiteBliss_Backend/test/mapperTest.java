@@ -1,26 +1,25 @@
 package com.BiteBliss.BiteBliss_Backend.test;
 
 import java.sql.Timestamp;
+import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.Test;
 
-import com.BiteBliss.BiteBliss_Backend.POJO.Favorite;
 import com.BiteBliss.BiteBliss_Backend.mapper.FavoriteMapper;
+import com.BiteBliss.BiteBliss_Backend.pojo.Favorite;
 import com.BiteBliss.BiteBliss_Backend.utils.MybatisUtil;
 
 
 public class mapperTest {
+  
+  private static final Logger logger = LogManager.getLogger("Hello!");
   @Test
   public void favoriteMapperTest() {
 
-    FavoriteMapper mapper = MybatisUtil.getSqlSession().getMapper(FavoriteMapper.class);
-    Favorite newFavorite = new Favorite();
-    newFavorite.setUserId(4);
-    newFavorite.setFavoriteStall("{\"favorite\": [\"1\", \"2\", \"3\"]}");
-    Timestamp currentTimestamp = new Timestamp(System.currentTimeMillis());
-    newFavorite.setUpdateTime(currentTimestamp);
-    newFavorite.setIsDelete(0);
-    mapper.insertFavorite(newFavorite);
+    System.out.println("wdawdadawd");
+    
 
   }
 }

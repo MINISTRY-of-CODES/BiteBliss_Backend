@@ -1,4 +1,4 @@
-package com.BiteBliss.BiteBliss_Backend.POJO;
+package com.BiteBliss.BiteBliss_Backend.pojo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
