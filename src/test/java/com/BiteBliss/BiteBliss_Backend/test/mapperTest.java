@@ -8,7 +8,7 @@ import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.Test;
 
 import com.BiteBliss.BiteBliss_Backend.mapper.FavoriteMapper;
-import com.BiteBliss.BiteBliss_Backend.pojo.Favorite;
+import com.BiteBliss.BiteBliss_Backend.pojo.po.Favorite;
 import com.BiteBliss.BiteBliss_Backend.utils.MybatisUtil;
 
 

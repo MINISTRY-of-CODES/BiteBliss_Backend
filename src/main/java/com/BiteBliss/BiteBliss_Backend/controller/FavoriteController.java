@@ -3,8 +3,8 @@ package com.BiteBliss.BiteBliss_Backend.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.BiteBliss.BiteBliss_Backend.pojo.Favorite;
 import com.BiteBliss.BiteBliss_Backend.pojo.Result;
+import com.BiteBliss.BiteBliss_Backend.pojo.po.Favorite;
 import com.BiteBliss.BiteBliss_Backend.service.FavoriteService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

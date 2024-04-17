@@ -9,7 +9,7 @@
   </settings>
 
   <typeAliases>
-    <package name="com.BiteBliss.BiteBliss_Backend.pojo"/>
+    <package name="com.BiteBliss.BiteBliss_Backend.pojo.po"/>
   </typeAliases>
 
   <environments default="development">

@@ -1,6 +1,6 @@
 package com.BiteBliss.BiteBliss_Backend.service;
 
-import com.BiteBliss.BiteBliss_Backend.pojo.Favorite;
+import com.BiteBliss.BiteBliss_Backend.pojo.po.Favorite;
 
 public interface FavoriteService {
   public void addFavorite(String favStalls, String uid);

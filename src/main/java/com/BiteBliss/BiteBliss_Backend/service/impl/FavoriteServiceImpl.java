@@ -8,7 +8,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Service;
 
 import com.BiteBliss.BiteBliss_Backend.mapper.FavoriteMapper;
-import com.BiteBliss.BiteBliss_Backend.pojo.Favorite;
+import com.BiteBliss.BiteBliss_Backend.pojo.po.Favorite;
 import com.BiteBliss.BiteBliss_Backend.service.FavoriteService;
 import com.BiteBliss.BiteBliss_Backend.utils.MybatisUtil;
 

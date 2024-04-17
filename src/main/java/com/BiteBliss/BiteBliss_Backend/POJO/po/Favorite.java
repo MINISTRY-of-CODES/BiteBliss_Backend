@@ -1,4 +1,4 @@
-package com.BiteBliss.BiteBliss_Backend.pojo;
+package com.BiteBliss.BiteBliss_Backend.pojo.po;
 
 import java.sql.Timestamp;
 
